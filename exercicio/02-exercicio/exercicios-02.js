@@ -11,7 +11,7 @@ const server = http.createServer(
         }else if(request.url === '/produtos'){
             pagina = 'produtos.html';
         }else {
-            arquivo = 'erro.html';
+            pagina = 'erro.html';
         }
         if (file.existsSync(pagina)) {
             file.readFile(pagina, 
@@ -27,7 +27,7 @@ const server = http.createServer(
             );
         } else {
             response.writeHead(500, {'Content-type' : 'text/html'});
-            response.write(`A pagina "${pagina}" não foi encontrada`);
+            response.write(`ERRO`);
             response.end();
         }
     }
