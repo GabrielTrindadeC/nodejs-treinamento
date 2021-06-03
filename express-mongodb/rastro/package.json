@@ -1,0 +1,15 @@
+{
+  "name": "rastro",
+  "version": "1.0.0",
+  "description": "Treinamento de EXPRESS+NODE+MONGODB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Gabriel Trindade",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
